@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="android:colorPrimaryDark">@color/wallet_holo_blue_light</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+</resources>
