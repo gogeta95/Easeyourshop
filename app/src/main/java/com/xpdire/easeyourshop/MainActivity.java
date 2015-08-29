@@ -43,8 +43,8 @@ public class MainActivity extends ActionBarActivity implements TouchableWrapper.
         map.setPadding(0, 120, 0, 0);
         map.getUiSettings().setZoomControlsEnabled(true);
         final AutoCompleteTextView suggestions = (AutoCompleteTextView) findViewById(R.id.suggestions);
-        final LatLngBounds EARTH = new LatLngBounds(new LatLng(-84.9, -180), new LatLng(84.9, 180));
-        suggestions.setAdapter(new PlaceAutocompleteAdapter(this, android.R.layout.simple_list_item_1, mGoogleApiClient, EARTH, null));
+        final LatLngBounds WHOLE_EARTH = new LatLngBounds(new LatLng(-84.9, -180), new LatLng(84.9, 180));
+        suggestions.setAdapter(new PlaceAutocompleteAdapter(this, android.R.layout.simple_list_item_1, mGoogleApiClient, WHOLE_EARTH, null));
         map.setOnMyLocationChangeListener(new GoogleMap.OnMyLocationChangeListener() {
             @Override
             public void onMyLocationChange(Location location) {
